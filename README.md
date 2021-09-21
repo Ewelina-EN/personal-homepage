@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## DEMO
 
-https://ewelina-en.github.io/personal_homepage/
+https://ewelina-en.github.io/personal-homepage/
 ## Available Scripts
 
 In the project directory, you can run:
