@@ -1,6 +1,5 @@
 export const skills = [
     "Semantic & accessible HTML",
-    "JavaScript: ES6+",
     "Teamwork",
     "Markdown",
     "CSS BEM convention",
@@ -19,6 +18,7 @@ export const skills = [
     "NPM",
     "React",
     "Git",
+    "JavaScript ES6+",
 ];
 
 export const newSkills = [
