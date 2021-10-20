@@ -3,6 +3,7 @@ import { Skills } from "./Skills";
 import { newSkills, skills } from "./Skills/skills";
 import { AboutMe } from "./AboutMe";
 import { Footer } from "./Footer";
+import { Portfolio } from "./Portfolio";
 
 export const PersonalHomepage = () => (
     <Container>
@@ -16,7 +17,8 @@ export const PersonalHomepage = () => (
                 title="What I want to learn next:"
                 skills={newSkills}
             />
-            <Footer/>
+            <Portfolio />
+            <Footer />
         </main>
     </Container>
 );
