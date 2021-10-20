@@ -18,7 +18,7 @@ export const Section = styled.section`
 export const List = styled.ul`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-gap: 8px 32px; */
+    grid-gap: 8px 16px;
     list-style: none;
     margin-right: 10px;
 
@@ -34,6 +34,7 @@ export const Item = styled.li`
     display: flex;
     line-height: 1.4;
     align-items: center;
+    color: ${({theme})=>theme.colors.slateGray};
 
     @media(max-widht: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         line-height: 1.2;
@@ -41,7 +42,7 @@ export const Item = styled.li`
 `;
 
 export const Dot = styled(dotIcon)`
-    color: ${({ theme }) => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.colors.slateGray};
     height: auto;
     margin-right: 15px;
 
@@ -49,7 +50,7 @@ export const Dot = styled(dotIcon)`
         width: 6px;
         margin-right: 8px;
         height: 8px;
-    }
+    };
 `;
 
 export const StyledHeader = styled(Subheader)`
@@ -58,6 +59,6 @@ export const StyledHeader = styled(Subheader)`
 
     @media(max-widht: ${({ theme }) => theme.breakpoints.mobileMax}) {
         padding-bottom: 10px;
-    }
+    };
 `;
 

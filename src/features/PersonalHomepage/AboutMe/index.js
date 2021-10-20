@@ -1,5 +1,13 @@
-import {Wrapper, Image, Text, Name, Summary, ButtonLink} from "./styled";
 import profilePhoto from "./profile.jpg";
+import {
+    Wrapper,
+    Image,
+    Text,
+    Name,
+    Summary,
+    ButtonLink
+} from "./styled";
+
 
 export const AboutMe = () => (
     <Wrapper>

@@ -6,4 +6,5 @@ export const Subheader = styled.h2`
     line-height: 36px;
     color: ${({theme})=> theme.colors.mineShaft};
     margin: 0;
+    letter-spacing: 0.05em;
 `;

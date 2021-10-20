@@ -32,6 +32,7 @@ export const Name = styled.h1`
     line-height: 46px;
     color: ${({theme})=> theme.colors.mineShaft};
     margin: 12px 0 0 0;
+    letter-spacing: 0.05em;
 `;
 
 export const Summary = styled.p`
