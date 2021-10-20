@@ -10,6 +10,6 @@ html {
   }
   
   body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 `;
