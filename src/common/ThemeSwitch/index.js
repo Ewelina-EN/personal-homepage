@@ -1,4 +1,11 @@
-import { Box, Button, Icon, IconWrapper, Text, Wrapper } from "./styled";
+import { 
+    Box, 
+    Button, 
+    Icon, 
+    IconWrapper, 
+    Text, 
+    Wrapper 
+} from "./styled";
 
 export const ThemeSwitch = () => {
 
