@@ -1,9 +1,8 @@
-import { multicastChannel } from "@redux-saga/core";
 import { createSlice } from "@reduxjs/toolkit";
 
 const personalHomePageSlice = createSlice({
     name: "personalHomepage",
-    initialStatus: {
+    initialState: {
         repositories: null,
         status: "initial",
     },
@@ -32,6 +31,6 @@ export const {
 const selectPersonalHomepageState = state => state.personalHomepage;
 
 export const selectRepositories = state => selectPersonalHomepageState(state).repositories;
-export const selectRepositoriesStatus = state => selectRepositoriesStatus(state).status;
+export const selectRepositoriesStatus = state => selectPersonalHomepageState(state).status;
 
-export default personalHomePageSlice.reducers;
+export default personalHomePageSlice.reducer;

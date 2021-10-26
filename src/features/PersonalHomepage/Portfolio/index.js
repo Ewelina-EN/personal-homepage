@@ -1,5 +1,6 @@
-import { Section, Header, StyledGitHubIcon, Projects} from "./styled";
+import { Section, Header, StyledGitHubIcon, Projects } from "./styled";
 import { Subheader } from "../Subheader";
+import { Content } from "./Content";
 
 export const Portfolio = () => {
     return (
@@ -12,6 +13,7 @@ export const Portfolio = () => {
                 <Projects>
                     My recent projects
                 </Projects>
+                <Content />
             </Header>
         </Section>
     )

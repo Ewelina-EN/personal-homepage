@@ -1,5 +1,5 @@
 import { ButtonLink } from "../../../AboutMe/styled";
-import { Wrapper, ErrorIcon, Header, Paragraph } from "./styled";
+import { Wrapper, Header, Paragraph } from "./styled";
 import { ReactComponent as ErrorIcon } from "./error.svg";
 
 export const Error = () => (
