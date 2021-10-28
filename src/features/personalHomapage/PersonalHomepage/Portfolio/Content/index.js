@@ -3,7 +3,6 @@ import { Loading } from "./Loading";
 import { Projects } from "./Project";
 
 export const Content = ({ status, repositories }) => {
-    console.log("content")
     switch (status) {
         case "initial":
             return null;
@@ -14,7 +13,10 @@ export const Content = ({ status, repositories }) => {
         case "error":
             return <Error />;
 
+        case "success":
+            return <Projects repositories={repositories} />;
+
         default:
-            return <Projects repositories={repositories} />
+            throw new Error(`incorrect status: ${status}`);
     };
 };
