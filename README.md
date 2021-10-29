@@ -7,7 +7,7 @@
 ## DEMO
 Click on the link to see how it works || https://ewelina-en.github.io/personal-homepage/
 
-##Technologies
+## Technologies
 
 - HTML
 - CSS (grid/ flexbox/ media queries)
