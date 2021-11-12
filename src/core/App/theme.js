@@ -50,8 +50,9 @@ export const themeLight = {
         themeSwitch: {
             background: colorNames.mercury,
             icon: colorNames.white,
-        }
-    },    
+        },
+    },
+};    
 
 export const themeDark = {
     ...common,
@@ -77,6 +78,6 @@ export const themeDark = {
         themeSwitch: {
             background: colorNames.doveGray,
             icon: colorNames.mineShaft,
-        }
+        },
     },
 };

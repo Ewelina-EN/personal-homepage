@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import α from "color-alpha";
 
 export const List = styled.ul`
     display: grid;
@@ -17,7 +16,6 @@ export const List = styled.ul`
 
 export const Tile = styled.li`
     background: ${({ theme }) => theme.colors.boxBackground};
-    box-shadow: ${({ theme }) => theme.boxShadow};
     border: 6px solid ${({ theme }) => theme.colors.tile.border};
     padding: 56px;
     margin: 0;
@@ -57,7 +55,7 @@ export const Link = styled.a`
     text-decoration: none;
     padding-bottom: 1px;
     color: ${({ theme }) => theme.colors.primary};
-    border-bottom: 1px solid ${({ theme }) => α(theme.colors.primary, 0.3)};
+    border-bottom: 1px solid ${({ theme }) =>theme.colors.primary};
 
     &:hover {
         border-color: unset;
