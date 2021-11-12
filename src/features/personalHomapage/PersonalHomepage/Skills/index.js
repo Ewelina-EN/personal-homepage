@@ -1,9 +1,9 @@
-import { 
-    Section, 
-    List, 
-    Item, 
-    Dot, 
-    StyledHeader 
+import {
+    Section,
+    List,
+    Item,
+    Dot,
+    StyledHeader
 } from "./styled";
 
 export const Skills = ({ title, skills }) => (
