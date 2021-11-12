@@ -1,51 +1,80 @@
 import styled from "styled-components";
+import α from "color-alpha";
 
 export const List = styled.ul`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     list-style: none;
+    margin-top: 24px;
     padding: 0;
     grid-gap: 40px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+        grid-template-columns: 1fr;
+        grid-gap: 24px;
+    }
 `;
 
 export const Tile = styled.li`
-    background-color: ${({theme})=> theme.colors.white};
-    box-shadow: ${({theme})=>theme.boxShadow};
-    box-sizing: border-box;
-    border: 6px solid rgba(209, 213, 218, 0.3);
+    background: ${({ theme }) => theme.colors.boxBackground};
+    box-shadow: ${({ theme }) => theme.boxShadow};
+    border: 6px solid ${({ theme }) => theme.colors.tile.border};
     padding: 56px;
     margin: 0;
+    transition: border-color 0.3s;
+    border-radius: ${({ theme }) => theme.borderRadiusSmall};
+
+    &:hover {
+        border-color: ${({ theme }) => theme.colors.tile.borderHover}
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        padding: 20px;
+    }
 `;
 
 export const Name = styled.h3`
     font-weight: bold;
     font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.05em;
-    color: ${({theme})=>theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.colors.tile.header};
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        padding: 16px;
+    }
 `;
 
 export const Description = styled.p`
-    font-size: 18px;
+    margin-top: 24px;
     line-height: 140%;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.05em;
-    color: ${({theme})=>theme.colors.slateGray};
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        margin-top: 16px;
+        font-size: 14px;
+    }
 `;
 
 export const Link = styled.a`
     text-decoration: none;
     padding-bottom: 1px;
+    color: ${({ theme }) => theme.colors.primary};
+    border-bottom: 1px solid ${({ theme }) => α(theme.colors.primary, 0.3)};
+
+    &:hover {
+        border-color: unset;
+    }
 `;
 
 export const Links = styled.dl`
-    font-size: 18px;
-    line-height: 140%;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.05em;
-    color: ${({theme})=>theme.colors.scienceBlue};
+    display: grid;
+    grid-gap: 8px;
+    line-height: 160%;
+    margin-top: 24px;
+    margin-bottom: 0;
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        margin-top: 16px;
+        font-size: 14px;
+    }
 `;
 
 export const LinksRow = styled.div`
@@ -56,4 +85,6 @@ export const LinksRow = styled.div`
 export const LinksValue = styled.dd`
     margin: 0;
 `;
+
+
 

@@ -1,13 +1,20 @@
 import styled from "styled-components";
 
 export const Button = styled.a`
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    text-decoration: none;
     padding: 12px 16px;
-    background: ${({theme})=>theme.colors.scienceBlue};
-    border: 1px solid rgba(209, 213, 218, 0.3);
-    box-sizing: border-box;
-    border-radius: 4px;
+    font-weight: 600;
+    font-size: 20px;
+    border: 1px solid ${({ theme }) => theme.colors.buttonLink.border};
+    color: ${({ theme }) => theme.colors.buttonLink.text};
+    border-radius: ${({ theme }) => theme.borderRadiusSmall};
+    background: ${({ theme }) => theme.colors.primary};
+    transition: box-shadow 0.3s;
+    
+    &:hover {
+        box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.buttonLink.shadow}
+}
+    @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
+        font-size: 18px;
+}
 `;
