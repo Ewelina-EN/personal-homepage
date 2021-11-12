@@ -1,3 +1,4 @@
+import { email } from "../email";
 import profilePhoto from "./profile.jpg";
 import {
     Wrapper,
@@ -5,7 +6,8 @@ import {
     Text,
     Name,
     Summary,
-    ButtonLink
+    ButtonLink,
+    ButtonIcon
 } from "./styled";
 
 
@@ -16,8 +18,8 @@ export const AboutMe = () => (
             <Text>This is</Text>
             <Name>Ewelina Niewęgłowska</Name>
             <Summary> I love creating websites and applications supporting business development. </Summary>
-            <ButtonLink>
-                {/* <ButtonIcon /> */}
+            <ButtonLink href={`mailto:${email}`} title={email}>
+                <ButtonIcon />
                 Hire me
             </ButtonLink>
         </div>
