@@ -31,7 +31,6 @@ export const themeLight = {
     colors: {
         primary: colorNames.scienceBlue,
         textPrimary: colorNames.mineShaft,
-        },
         tile: {
             borderHover: colorNames.tropicalBlue,
             border: colorNames.porcelain,
@@ -52,7 +51,7 @@ export const themeLight = {
             background: colorNames.mercury,
             icon: colorNames.white,
         }
-    }
+    },    
 
 export const themeDark = {
     ...common,
