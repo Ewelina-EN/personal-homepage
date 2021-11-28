@@ -36,6 +36,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+## Deployment
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
@@ -43,3 +44,11 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
+
+### Push to gh-pages branch
+`git subtree push --prefix build  origin gh-pages`
+
+#### Troubleshooting
+1. Delete "gh-pages" on Github.
+2. Delete "gh-pages" localy `git branch -D gh-pages"
+3. `git subtree push --prefix build  origin gh-pages` will force regenerate GH Page.
