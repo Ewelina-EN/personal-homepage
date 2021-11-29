@@ -23,8 +23,6 @@ export const Email = styled.div`
 export const EmailLink = styled.a`
     font-weight: 900;
     font-size: 32px;
-    line-height: 39px;
-    letter-spacing: 0.05em;
     color: ${({ theme }) => theme.colors.textPrimary};
     text-decoration: none;
 
@@ -33,15 +31,15 @@ export const EmailLink = styled.a`
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
-        font-size: 16px;
+        font-size: 18px;
     }
 `;
 
 export const Paragraph = styled.p`
     font-size: 18px;
     line-height: 140%;
-    letter-spacing: 0.05em;
     color: ${({ theme }) => theme.colors.textPrimary};
+    margin: 0;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         font-size: 14px;

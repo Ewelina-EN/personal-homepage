@@ -4,6 +4,8 @@ export const List = styled.ul`
     margin-top: 56px;
     display: flex;
     list-style: none;
+    margin-bottom: 0;
+    padding: 0;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px){
         margin-top: 40px;
