@@ -20,7 +20,7 @@ export const Projects = ({ repositories }) => (
                         <LinksRow>
                             <dt>Demo:</dt>
                             <LinksValue>
-                                <Link rel="noreferrer" href={homepage}>Preview site</Link>
+                                <Link rel="noreferrer" href={homepage}>{homepage}</Link>
                             </LinksValue>
                         </LinksRow>
                     )}

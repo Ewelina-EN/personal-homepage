@@ -6,7 +6,7 @@ export const Section = styled.section`
     background: ${({ theme }) => theme.colors.boxBackground};
     box-shadow: ${({ theme }) => theme.boxShadow};
     border-radius: ${({ theme }) => theme.borderRadiusSmall};
-    padding: 30px;
+    padding: 32px;
     margin-top: 72px;
 
     @media(max-widht: ${({ theme }) => theme.breakpoints.mobileMax}px){
@@ -22,6 +22,14 @@ export const List = styled.ul`
     list-style: none;
     margin-top: 32px;
     padding: 0;
+
+    @media(max-widht: ${({ theme }) => theme.breakpoints.tabletHorizontalMax}px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media(max-widht: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
+        font-size: 16px;
+    }
 
     @media(max-widht: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         grid-template-columns: 1fr;
@@ -42,7 +50,7 @@ export const Item = styled.li`
 export const Dot = styled(dotIcon)`
     color: ${({ theme }) => theme.colors.primary};
     height: auto;
-    margin-right: 15px;
+    margin-right: 16px;
 
     @media(max-widht: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         width: 6px;
@@ -51,10 +59,10 @@ export const Dot = styled(dotIcon)`
 `;
 
 export const StyledHeader = styled(Subheader)`
-    padding-bottom: 15px;
+    padding-bottom: 16px;
     border-bottom: 1px solid ${({ theme }) => theme.colors.headerLine};
 
-    @media(max-widht: ${({ theme }) => theme.breakpoints.mobileMax}) {
+    @media(max-widht: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         padding-bottom: 12px;
     };
 `;

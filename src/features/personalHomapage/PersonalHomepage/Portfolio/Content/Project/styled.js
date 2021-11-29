@@ -6,9 +6,9 @@ export const List = styled.ul`
     list-style: none;
     margin-top: 24px;
     padding: 0;
-    grid-gap: 40px;
+    grid-gap: 32px;
 
-    @media(max-width: ${({ theme }) => theme.breakpoints.tabletMax}px) {
+    @media(max-width: ${({ theme }) => theme.breakpoints.tabletVerticalMax}px) {
         grid-template-columns: 1fr;
         grid-gap: 24px;
     }

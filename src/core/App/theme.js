@@ -20,7 +20,9 @@ const colorNames = {
 const common = {
     breakpoints: {
         mobileMax: 767,
-        tabletMax: 991,
+        tabletVerticalMax: 991,
+        tabletHorizontalMax: 1199,
+
     },
     borderRadiusSmall: "4px",
     boxShadow: "0px -2px 50px rgb(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03)",
