@@ -2,7 +2,6 @@ const colorNames = {
     white: "#FFFFFF",
     slateGray: "#6E7E91",
     scienceBlue: "#0366D6",
-    scienceBlueTransparent: "rgba(220, 20, 60, 0.03)",
     mercury: "#E5E5E5",
     doveGray: "#363636",
     mineShaft: "#252525",
@@ -14,6 +13,8 @@ const colorNames = {
     ironTransparent: "rgba(209, 213, 218, 0.3)",
     tropicalBlue: "#CDE0F7",
     anakiwa: "8CC2FF",
+    shipCove: "#6D93BE",
+    dodgerBlue: "#2188FF",
 };
 
 const common = {
@@ -22,7 +23,7 @@ const common = {
         tabletMax: 991,
     },
     borderRadiusSmall: "4px",
-    boxShadow: "0px -2px 50px rgb(241, 233, 235), 0px 16px 58px rgba(9, 10, 51, 0.03)",
+    boxShadow: "0px -2px 50px rgb(9, 10, 51, 0.02), 0px 16px 58px rgba(9, 10, 51, 0.03)",
 
 };
 
@@ -61,8 +62,8 @@ export const themeDark = {
         textPrimary: colorNames.white,
         buttonLink: {
             text: colorNames.white,
-            shadow: colorNames.ironTransparent,
-            border: colorNames.shipCove,
+            border: colorNames.ironTransparent,
+            shadow: colorNames.shipCove,
         },
         tile: {
             borderHover: colorNames.bluemine,
@@ -70,7 +71,7 @@ export const themeDark = {
             header: colorNames.white,
         },
         site: {
-            background: colorNames.mineShaftLighter,
+            background: colorNames.mineShaft,
             text: colorNames.white,
         },
         boxBackground: colorNames.mineShaftLighter,
