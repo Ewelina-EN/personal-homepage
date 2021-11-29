@@ -17,6 +17,7 @@ html {
     letter-spacing: 0.05em;
     word-break: break-word;
     transition: background 0.3s;
+    padding-bottom: 50px;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.mobileMax}px) {
       padding-bottom: 32px;
