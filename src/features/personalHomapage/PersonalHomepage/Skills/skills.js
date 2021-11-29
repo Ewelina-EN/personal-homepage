@@ -5,23 +5,18 @@ export const skills = [
     "CSS BEM convention",
     "CSS Grid",
     "CSS Flexbox",
-    "Error handling",
     "Working with API (fetch, axios)",
-    "Promises, Async/Await",
-    "GitHub Pull Requests & Review",
     "Trello",
     "Scrum",
-    "NPM",
     "React",
-    "Git",
     "JavaScript ES6+",
 ];
 
 export const newSkills = [
+    "Git",
     "Unit testing",
     "JS classes",
-    "React Context",
     "Node.js",
-    "Cypress",
+    "Redux",
     "TypeScript",
 ];

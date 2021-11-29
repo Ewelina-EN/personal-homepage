@@ -3,12 +3,11 @@ import { Subheader } from "../Subheader";
 import { ReactComponent as dotIcon } from "./dotIcon.svg";
 
 export const Section = styled.section`
-    background-color: ${({ theme }) => theme.colors.boxBackground};
+    background: ${({ theme }) => theme.colors.boxBackground};
     box-shadow: ${({ theme }) => theme.boxShadow};
     border-radius: ${({ theme }) => theme.borderRadiusSmall};
-    border-radius: 4px;
     padding: 30px;
-    margin-top: 50px;
+    margin-top: 72px;
 
     @media(max-widht: ${({ theme }) => theme.breakpoints.mobileMax}px){
         margin-top: 48px;
@@ -34,7 +33,6 @@ export const List = styled.ul`
 export const Item = styled.li`
     display: flex;
     line-height: 1.4;
-    align-items: center;
 
     @media(max-widht: ${({ theme }) => theme.breakpoints.mobileMax}px) {
         line-height: 1.2;
