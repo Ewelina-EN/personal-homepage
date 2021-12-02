@@ -46,6 +46,7 @@ The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
 ### Push to gh-pages branch
+`npm run build`
 `git subtree push --prefix build  origin gh-pages`
 
 #### Troubleshooting
